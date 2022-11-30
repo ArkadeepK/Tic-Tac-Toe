@@ -24,7 +24,6 @@ def take_input(turn,board):
     return int(pos)
 
 def is_gameon():
-    print("Inside game on")
     on = "0"
     while on not in ["Y","N","y","n"]:
         on = input("Want to keep playing? (Y / N): ")
@@ -98,5 +97,4 @@ while gameon:
         turn += 1
     if turn > 9:
         print("Game Drawn :(")
-    print("Initiating game on")
     gameon = is_gameon()
